@@ -1,0 +1,95 @@
+* {
+	box-sizing: border-box;  
+}
+
+body {
+	padding: 0;
+	background-color: white;
+}
+
+div#container{
+	background-color: grey;
+	font-family: Helvetica;
+	color: black;
+	font-size: 1em;
+}
+
+#p1, #p2,#p3{
+	position: relative;
+	float: right;
+	border: 1px solid black;
+	font-size: 1.25em;
+	margin-right: 0px;
+	margin-top: 0px;
+	text-align: center;
+	padding-left: 3%;
+	padding-right: 3%;
+}
+#p1 {
+	background-color: pink;
+	color: black;
+}
+
+#p2 {
+	background-color: red;
+	color: white;
+}
+
+#p3 {
+	background-color: beige;
+	color: black;
+}
+
+.textblock {
+	padding: 3% 2% 2% 2%;
+}
+
+/* Simple Responsive Framework */
+.row {
+	width: 100%;
+}
+
+/* Desktop Version */
+@media (min-width: 992px) {
+	.shortbox,.longbox {
+	float: left;
+	border: 1px solid black;
+	width: 32.33%;
+	margin-right: 1%;
+	margin-bottom: 1%;
+	}
+	
+}
+
+/* Tablet Version */
+@media (min-width: 768px) and (max-width: 991px) {
+	.shortbox,.longbox {
+	float: left;
+	border: 1px solid black;
+	margin-right: 1%;
+	margin-bottom: 1%;
+	}
+	.shortbox {
+		width: 49%
+	}
+	.longbox {
+		width: 99%
+	}
+}
+
+/* Mobile Version */
+@media (max-width: 767px) {
+	.shortbox,.longbox {
+	float: left;
+	border: 1px solid black;
+	width: 100%;
+	margin-bottom: 1%;
+	}
+}
+
+
+h1 {
+	margin-bottom: 30px;
+	font-size: 1.75em;
+	text-align: center;
+}
