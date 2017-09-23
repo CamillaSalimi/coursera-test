@@ -1,0 +1,96 @@
+<!doctype html>
+<html>
+<head>
+	<title> Funny Jokes </title>
+</head>
+<style>
+
+* {
+	box-sizing: border-box;  
+}
+
+body {
+	padding: 0;
+	background-color: white;
+}
+
+div#container{
+	background-color: grey;
+	font-family: Helvetica;
+	color: black;
+}
+
+#p1, #p2,#p3{
+	position: relative;
+	float: right;
+	border: 1px solid black;
+	margin-right: 0px;
+	margin-top: 0px;
+}
+#p1 {
+	background-color: pink;
+}
+
+#p2 {
+	background-color: maroon;
+}
+
+#p3 {
+	background-color: beige;
+}
+
+/* Simple Responsive Framework */
+.row {
+	width: 100%;
+}
+
+/* Desktop Version */
+@media (min-width: 992px) {
+	.boxtype1,.boxtype2 {
+	float: left;
+	border: 2px solid black;
+	width: 25%;
+	}
+	
+}
+
+/* Tablet Version */
+@media (min-width: 768px) and (max-width: 991px) {
+	.boxtype1,.boxtype2 {
+	float: left;
+	border: 2px solid black;
+	}
+	.boxtype1 {
+		width: 50%
+	}
+	.boxtype2 {
+		width: 100%
+	}
+}
+
+/* Mobile Version */
+@media (max-width: 767px) {
+	.boxtype1 {
+	float: left;
+	border: 2px solid black;
+	width: 100%
+	}
+}
+
+
+h1 {
+	margin-bottom: 30px;
+}
+
+</style>
+
+<body>
+<h1> First Joke </h1>
+<div class="row">
+	<div class="boxtype1", id="container"><p id="p1"> Joke 1</p></div>
+	<div class="boxtype1", id="container"><p id="p2"> Joke 2</p></div>
+	<div class="boxtype1 boxtype2", id="container"><p id="p3"> Joke 3</p></div>
+</div>
+
+</body>
+</html>

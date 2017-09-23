@@ -19,8 +19,8 @@ div#container{
 	float: right;
 	border: 1px solid black;
 	font-size: 1.25em;
-	margin-right: 0px;
-	margin-top: 0px;
+	margin-right: -1px;
+	margin-top: -1px;
 	text-align: center;
 	padding-left: 3%;
 	padding-right: 3%;
